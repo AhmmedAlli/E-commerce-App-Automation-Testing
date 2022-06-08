@@ -3,6 +3,7 @@ package org.example.StepsCode;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.example.Pages.HomePage;
 import org.openqa.selenium.By;
 import org.testng.asserts.SoftAssert;
 
@@ -11,6 +12,7 @@ public class C08_SelectTags {
 
     @When("User select different tags")
     public void selectTag() throws InterruptedException {
+        HomePage.changeCurrency();
         Thread.sleep(1000);
         Hooks.driver.findElement(By.cssSelector("li>a[href=\"/awesome\"]")).click();
 

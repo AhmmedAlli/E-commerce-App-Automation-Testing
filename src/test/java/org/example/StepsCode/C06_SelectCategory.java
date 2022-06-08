@@ -1,5 +1,6 @@
 package org.example.StepsCode;
 
+import org.example.Pages.HomePage;
 import org.example.Pages.LoginPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -17,6 +18,7 @@ public class C06_SelectCategory {
     public void loginWebsite() throws InterruptedException
     {
         LoginPage.LoginSteps(Hooks.Email,Hooks.Password);
+        HomePage.changeCurrency();
     }
 
     @When("User select any category")

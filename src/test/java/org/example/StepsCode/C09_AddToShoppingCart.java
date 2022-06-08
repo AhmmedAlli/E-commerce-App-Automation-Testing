@@ -14,7 +14,10 @@ public class C09_AddToShoppingCart {
 
     @And("User go to home page to shop any product")
     public void goToHomePage()
-    {HomePage.goToHomePage();}
+    {
+        HomePage.goToHomePage();
+        HomePage.changeCurrency();
+    }
 
     @When("User add products to cart")
     public void addToCart() throws InterruptedException {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.example.Runners.TestRunTestNg" time="190.345" tests="12" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.example.Runners.TestRunTestNg" time="274.781" tests="18" errors="0" skipped="0" failures="3">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -19,7 +19,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\VT\AppData\Local\Temp\surefire4542658501789184648\surefirebooter2844743750292243282.jar C:\Users\VT\AppData\Local\Temp\surefire4542658501789184648 2022-06-08T05-16-32_442-jvmRun1 surefire429225759576799227tmp surefire_01884540365772813851tmp"/>
+    <property name="sun.java.command" value="C:\Users\VT\AppData\Local\Temp\surefire5556988159833900079\surefirebooter4511124233301912131.jar C:\Users\VT\AppData\Local\Temp\surefire5556988159833900079 2022-06-08T15-11-39_513-jvmRun1 surefire2816242486613171191tmp surefire_02688758888431987169tmp"/>
     <property name="surefire.test.class.path" value="D:\FWD-SCHOLARSHIP\AutomationProject\target\test-classes;D:\FWD-SCHOLARSHIP\AutomationProject\target\classes;C:\Users\VT\.m2\repository\org\seleniumhq\selenium\selenium-java\4.2.1\selenium-java-4.2.1.jar;C:\Users\VT\.m2\repository\org\seleniumhq\selenium\selenium-api\4.2.1\selenium-api-4.2.1.jar;C:\Users\VT\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.2.1\selenium-chrome-driver-4.2.1.jar;C:\Users\VT\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\VT\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\VT\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\VT\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\VT\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\VT\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\VT\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\VT\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\VT\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\VT\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.2.1\selenium-chromium-driver-4.2.1.jar;C:\Users\VT\.m2\repository\org\seleniumhq\selenium\selenium-json\4.2.1\selenium-json-4.2.1.jar;C:\Users\VT\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v100\4.2.1\selenium-devtools-v100-4.2.1.jar;C:\Users\VT\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v101\4.2.1\selenium-devtools-v101-4.2.1.jar;C:\Users\VT\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v102\4.2.1\selenium-devtools-v102-4.2.1.jar;C:\Users\VT\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.2.1\selenium-devtools-v85-4.2.1.jar;C:\Users\VT\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.2.1\selenium-edge-driver-4.2.1.jar;C:\Users\VT\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.2.1\selenium-firefox-driver-4.2.1.jar;C:\Users\VT\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.2.1\selenium-ie-driver-4.2.1.jar;C:\Users\VT\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.2.1\selenium-opera-driver-4.2.1.jar;C:\Users\VT\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.2.1\selenium-remote-driver-4.2.1.jar;C:\Users\VT\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\VT\.m2\repository\io\netty\netty-buffer\4.1.77.Final\netty-buffer-4.1.77.Final.jar;C:\Users\VT\.m2\repository\io\netty\netty-codec-http\4.1.77.Final\netty-codec-http-4.1.77.Final.jar;C:\Users\VT\.m2\repository\io\netty\netty-codec\4.1.77.Final\netty-codec-4.1.77.Final.jar;C:\Users\VT\.m2\repository\io\netty\netty-handler\4.1.77.Final\netty-handler-4.1.77.Final.jar;C:\Users\VT\.m2\repository\io\netty\netty-common\4.1.77.Final\netty-common-4.1.77.Final.jar;C:\Users\VT\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.77.Final\netty-transport-classes-epoll-4.1.77.Final.jar;C:\Users\VT\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.77.Final\netty-transport-classes-kqueue-4.1.77.Final.jar;C:\Users\VT\.m2\repository\io\netty\netty-transport-native-epoll\4.1.77.Final\netty-transport-native-epoll-4.1.77.Final.jar;C:\Users\VT\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.77.Final\netty-transport-native-kqueue-4.1.77.Final.jar;C:\Users\VT\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.77.Final\netty-transport-native-unix-common-4.1.77.Final.jar;C:\Users\VT\.m2\repository\io\netty\netty-transport\4.1.77.Final\netty-transport-4.1.77.Final.jar;C:\Users\VT\.m2\repository\io\netty\netty-resolver\4.1.77.Final\netty-resolver-4.1.77.Final.jar;C:\Users\VT\.m2\repository\io\opentelemetry\opentelemetry-api\1.14.0\opentelemetry-api-1.14.0.jar;C:\Users\VT\.m2\repository\io\opentelemetry\opentelemetry-context\1.14.0\opentelemetry-context-1.14.0.jar;C:\Users\VT\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.14.0\opentelemetry-exporter-logging-1.14.0.jar;C:\Users\VT\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.14.0\opentelemetry-sdk-metrics-1.14.0.jar;C:\Users\VT\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.14.0-alpha\opentelemetry-sdk-logs-1.14.0-alpha.jar;C:\Users\VT\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.14.0\opentelemetry-sdk-common-1.14.0.jar;C:\Users\VT\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.14.0\opentelemetry-sdk-extension-autoconfigure-spi-1.14.0.jar;C:\Users\VT\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.14.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.14.0-alpha.jar;C:\Users\VT\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.14.0\opentelemetry-sdk-trace-1.14.0.jar;C:\Users\VT\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.14.0\opentelemetry-sdk-1.14.0.jar;C:\Users\VT\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.14.0-alpha\opentelemetry-semconv-1.14.0-alpha.jar;C:\Users\VT\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\VT\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;C:\Users\VT\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\VT\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\VT\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\VT\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\VT\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\VT\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\VT\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\VT\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\VT\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\VT\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\VT\.m2\repository\org\seleniumhq\selenium\selenium-http\4.2.1\selenium-http-4.2.1.jar;C:\Users\VT\.m2\repository\dev\failsafe\failsafe\3.2.4\failsafe-3.2.4.jar;C:\Users\VT\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.2.1\selenium-safari-driver-4.2.1.jar;C:\Users\VT\.m2\repository\org\seleniumhq\selenium\selenium-support\4.2.1\selenium-support-4.2.1.jar;C:\Users\VT\.m2\repository\io\cucumber\cucumber-java\7.3.4\cucumber-java-7.3.4.jar;C:\Users\VT\.m2\repository\io\cucumber\cucumber-core\7.3.4\cucumber-core-7.3.4.jar;C:\Users\VT\.m2\repository\io\cucumber\cucumber-gherkin\7.3.4\cucumber-gherkin-7.3.4.jar;C:\Users\VT\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.3.4\cucumber-gherkin-messages-7.3.4.jar;C:\Users\VT\.m2\repository\io\cucumber\gherkin\23.0.1\gherkin-23.0.1.jar;C:\Users\VT\.m2\repository\io\cucumber\messages\18.0.0\messages-18.0.0.jar;C:\Users\VT\.m2\repository\io\cucumber\tag-expressions\4.1.0\tag-expressions-4.1.0.jar;C:\Users\VT\.m2\repository\io\cucumber\cucumber-expressions\15.1.1\cucumber-expressions-15.1.1.jar;C:\Users\VT\.m2\repository\io\cucumber\datatable\7.3.4\datatable-7.3.4.jar;C:\Users\VT\.m2\repository\io\cucumber\cucumber-plugin\7.3.4\cucumber-plugin-7.3.4.jar;C:\Users\VT\.m2\repository\io\cucumber\docstring\7.3.4\docstring-7.3.4.jar;C:\Users\VT\.m2\repository\io\cucumber\html-formatter\19.1.0\html-formatter-19.1.0.jar;C:\Users\VT\.m2\repository\io\cucumber\ci-environment\9.0.4\ci-environment-9.0.4.jar;C:\Users\VT\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\VT\.m2\repository\io\cucumber\cucumber-junit\7.3.4\cucumber-junit-7.3.4.jar;C:\Users\VT\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\VT\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\VT\.m2\repository\io\cucumber\cucumber-testng\7.3.4\cucumber-testng-7.3.4.jar;C:\Users\VT\.m2\repository\org\testng\testng\7.5\testng-7.5.jar;C:\Users\VT\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\VT\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\VT\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\VT"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\VT\AppData\Local\Temp\surefire4542658501789184648\surefirebooter2844743750292243282.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\VT\AppData\Local\Temp\surefire5556988159833900079\surefirebooter4511124233301912131.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -62,143 +62,143 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="runScenario[&quot;User will enter valid to inputs&quot;, &quot;SC1- Registration | guest user could register with valid data successfully&quot;](1)" classname="org.example.Runners.TestRunTestNg" time="14.539">
+  <testcase name="runScenario[&quot;User will enter valid to inputs&quot;, &quot;SC1- Registration | guest user could register with valid data successfully&quot;](1)" classname="org.example.Runners.TestRunTestNg" time="17.345">
     <system-out><![CDATA[D:\FWD-SCHOLARSHIP\AutomationProject\src\main\resources\chromedriver.exe
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 53104
+Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 58833
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 08, 2022 5:16:35 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 08, 2022 3:11:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jun 08, 2022 5:16:35 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 08, 2022 3:11:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 102
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;User log in with valid email and password&quot;, &quot;SC2- User could log in with valid email and password&quot;](2)" classname="org.example.Runners.TestRunTestNg" time="8.036">
+  <testcase name="runScenario[&quot;User log in with valid email and password&quot;, &quot;SC2- User could log in with valid email and password&quot;](2)" classname="org.example.Runners.TestRunTestNg" time="8.832">
     <system-out><![CDATA[D:\FWD-SCHOLARSHIP\AutomationProject\src\main\resources\chromedriver.exe
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 52052
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 63620
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 08, 2022 5:16:49 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 08, 2022 3:11:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jun 08, 2022 5:16:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 08, 2022 3:11:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 102
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;User want to reset his/her password&quot;, &quot;SC3- User could reset his/her password successfully&quot;](3)" classname="org.example.Runners.TestRunTestNg" time="7.671">
+  <testcase name="runScenario[&quot;User want to reset his/her password&quot;, &quot;SC3- User could reset his/her password successfully&quot;](3)" classname="org.example.Runners.TestRunTestNg" time="7.841">
     <system-out><![CDATA[D:\FWD-SCHOLARSHIP\AutomationProject\src\main\resources\chromedriver.exe
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 49903
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 63738
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 08, 2022 5:16:57 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 08, 2022 3:12:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jun 08, 2022 5:16:57 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 08, 2022 3:12:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 102
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;User search about product&quot;, &quot;SC4- Logged User could search for any product&quot;](4)" classname="org.example.Runners.TestRunTestNg" time="9.517">
+  <testcase name="runScenario[&quot;User search about product&quot;, &quot;SC4- Logged User could search for any product&quot;](4)" classname="org.example.Runners.TestRunTestNg" time="9.776">
     <system-out><![CDATA[D:\FWD-SCHOLARSHIP\AutomationProject\src\main\resources\chromedriver.exe
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 60768
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 50721
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 08, 2022 5:17:05 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 08, 2022 3:12:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jun 08, 2022 5:17:05 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 08, 2022 3:12:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 102
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Logged user switch currency to euro&quot;, &quot;SC5- Logged User could switch between currencies US-Euro&quot;](5)" classname="org.example.Runners.TestRunTestNg" time="9.83">
+  <testcase name="runScenario[&quot;Logged user switch currency to euro&quot;, &quot;SC5- Logged User could switch between currencies US-Euro&quot;](5)" classname="org.example.Runners.TestRunTestNg" time="10.062">
     <system-out><![CDATA[D:\FWD-SCHOLARSHIP\AutomationProject\src\main\resources\chromedriver.exe
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 54452
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 53763
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 08, 2022 5:17:14 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 08, 2022 3:12:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jun 08, 2022 5:17:14 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 08, 2022 3:12:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 102
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Logged user select Category&quot;, &quot;SC6- Logged user could select different Categories&quot;](6)" classname="org.example.Runners.TestRunTestNg" time="12.034">
-    <system-out><![CDATA[D:\FWD-SCHOLARSHIP\AutomationProject\src\main\resources\chromedriver.exe
-desktops
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 52460
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jun 08, 2022 5:17:24 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected upstream dialect: W3C
-Jun 08, 2022 5:17:24 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFO: Found exact CDP implementation for version 102
-]]></system-err>
-  </testcase>
-  <testcase name="runScenario[&quot;User filter selected item with color&quot;, &quot;SC7- Logged user could filter with color&quot;](7)" classname="org.example.Runners.TestRunTestNg" time="11.969">
-    <system-out><![CDATA[D:\FWD-SCHOLARSHIP\AutomationProject\src\main\resources\chromedriver.exe
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 59163
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jun 08, 2022 5:17:36 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected upstream dialect: W3C
-Jun 08, 2022 5:17:36 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFO: Found exact CDP implementation for version 102
-]]></system-err>
-  </testcase>
-  <testcase name="runScenario[&quot;User try to select different tags&quot;, &quot;SC8- Logged user could select different tags&quot;](8)" classname="org.example.Runners.TestRunTestNg" time="14.129">
+  <testcase name="runScenario[&quot;Logged user select Category&quot;, &quot;SC6- Logged user could select different Categories&quot;](6)" classname="org.example.Runners.TestRunTestNg" time="12.878">
     <system-out><![CDATA[D:\FWD-SCHOLARSHIP\AutomationProject\src\main\resources\chromedriver.exe
 desktops
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 64634
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 55260
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 08, 2022 5:17:48 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 08, 2022 3:12:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jun 08, 2022 5:17:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 08, 2022 3:12:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 102
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;User try to add product to shopping cart&quot;, &quot;SC9- Logged user could add different products to Shopping cart&quot;](9)" classname="org.example.Runners.TestRunTestNg" time="19.039">
+  <testcase name="runScenario[&quot;User filter selected item with color&quot;, &quot;SC7- Logged user could filter with color&quot;](7)" classname="org.example.Runners.TestRunTestNg" time="13.291">
     <system-out><![CDATA[D:\FWD-SCHOLARSHIP\AutomationProject\src\main\resources\chromedriver.exe
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 63839
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 51304
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 08, 2022 5:18:02 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 08, 2022 3:12:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jun 08, 2022 5:18:02 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 08, 2022 3:12:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 102
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;User could be able to add products to wishlist&quot;, &quot;SC10- Logged user could add different products to Wishlist&quot;](10)" classname="org.example.Runners.TestRunTestNg" time="21.57">
+  <testcase name="runScenario[&quot;User try to select different tags&quot;, &quot;SC8- Logged user could select different tags&quot;](8)" classname="org.example.Runners.TestRunTestNg" time="16.487">
+    <system-out><![CDATA[D:\FWD-SCHOLARSHIP\AutomationProject\src\main\resources\chromedriver.exe
+desktops
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 65007
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 08, 2022 3:13:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Jun 08, 2022 3:13:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 102
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User try to add product to shopping cart&quot;, &quot;SC9- Logged user could add different products to Shopping cart&quot;](9)" classname="org.example.Runners.TestRunTestNg" time="19.018">
+    <system-out><![CDATA[D:\FWD-SCHOLARSHIP\AutomationProject\src\main\resources\chromedriver.exe
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 50552
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 08, 2022 3:13:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Jun 08, 2022 3:13:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 102
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User could be able to add products to wishlist&quot;, &quot;SC10- Logged user could add different products to Wishlist&quot;](10)" classname="org.example.Runners.TestRunTestNg" time="24">
     <system-out><![CDATA[D:\FWD-SCHOLARSHIP\AutomationProject\src\main\resources\chromedriver.exe
 rgba(75, 176, 122, 1)
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 58806
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 52933
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 08, 2022 5:18:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 08, 2022 3:13:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jun 08, 2022 5:18:21 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 08, 2022 3:13:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 102
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;user try to compare multiple products&quot;, &quot;SC11- Logged user could add different products to compare list&quot;](11)" classname="org.example.Runners.TestRunTestNg" time="21.304">
+  <testcase name="runScenario[&quot;user try to compare multiple products&quot;, &quot;SC11- Logged user could add different products to compare list&quot;](11)" classname="org.example.Runners.TestRunTestNg" time="23.835">
     <system-out><![CDATA[D:\FWD-SCHOLARSHIP\AutomationProject\src\main\resources\chromedriver.exe
 
 @regression
@@ -278,26 +278,122 @@ Scenario: user try to compare multiple products            &amp#27;[90m# src/mai
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser go to home page to shop any product&amp#27;[0m             &amp#27;[90m# org.example.StepsCode.C09_AddToShoppingCart.goToHomePage()&amp#27;[0m
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser try to compare multiple products&amp#27;[0m               &amp#27;[90m# org.example.StepsCode.C011_AddToCompareList.compareProducts()&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mSuccessful me]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 53029
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 56778
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 08, 2022 5:18:43 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 08, 2022 3:14:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jun 08, 2022 5:18:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 08, 2022 3:14:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 102
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;User make an order&quot;, &quot;SC12- Create successful Order&quot;](12)" classname="org.example.Runners.TestRunTestNg" time="39.816">
+  <testcase name="runScenario[&quot;User make an order&quot;, &quot;SC12- Create successful Order&quot;](12)" classname="org.example.Runners.TestRunTestNg" time="43.282">
     <system-out><![CDATA[D:\FWD-SCHOLARSHIP\AutomationProject\src\main\resources\chromedriver.exe
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 60214
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 50980
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 08, 2022 5:19:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 08, 2022 3:14:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jun 08, 2022 5:19:04 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 08, 2022 3:14:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 102
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User opens facebook link&quot;, &quot;SC-13 User could have to follow the pages of website&quot;](13)" classname="org.example.Runners.TestRunTestNg" time="10.95">
+    <system-out><![CDATA[D:\FWD-SCHOLARSHIP\AutomationProject\src\main\resources\chromedriver.exe
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 57535
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 08, 2022 3:15:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Jun 08, 2022 3:15:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 102
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User opens twitter link&quot;, &quot;SC-13 User could have to follow the pages of website&quot;](14)" classname="org.example.Runners.TestRunTestNg" time="11.942">
+    <system-out><![CDATA[D:\FWD-SCHOLARSHIP\AutomationProject\src\main\resources\chromedriver.exe
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 56884
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 08, 2022 3:15:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Jun 08, 2022 3:15:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 102
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User opens rss link&quot;, &quot;SC-13 User could have to follow the pages of website&quot;](15)" classname="org.example.Runners.TestRunTestNg" time="8.351">
+    <failure message="Index: 1, Size: 1" type="java.lang.IndexOutOfBoundsException"><![CDATA[java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at org.example.StepsCode.C13_FollowUs.openRss(C13_FollowUs.java:81)
+	at ✽.User opens rss link(file:///D:/FWD-SCHOLARSHIP/AutomationProject/src/main/resources/Features/SC13_FollowUs.feature:27)
+]]></failure>
+    <system-out><![CDATA[D:\FWD-SCHOLARSHIP\AutomationProject\src\main\resources\chromedriver.exe
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 53056
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 08, 2022 3:15:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Jun 08, 2022 3:15:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 102
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User opens youtube link&quot;, &quot;SC-13 User could have to follow the pages of website&quot;](16)" classname="org.example.Runners.TestRunTestNg" time="15.647">
+    <system-out><![CDATA[D:\FWD-SCHOLARSHIP\AutomationProject\src\main\resources\chromedriver.exe
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 65255
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 08, 2022 3:15:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Jun 08, 2022 3:15:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 102
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;First slider is clickable on home page&quot;, &quot;SC14- User Can to click to home slider and go to related page&quot;](17)" classname="org.example.Runners.TestRunTestNg" time="8.583">
+    <failure message="expected:&lt;...emo.nopcommerce.com/[]&gt; but was:&lt;...emo.nopcommerce.com/[nokia-lumia-1020]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<...emo.nopcommerce.com/[]> but was:<...emo.nopcommerce.com/[nokia-lumia-1020]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at org.example.StepsCode.C14_HomeSlider.confirmShowOne(C14_HomeSlider.java:21)
+	at ✽.Relative product for first slider is displayed(file:///D:/FWD-SCHOLARSHIP/AutomationProject/src/main/resources/Features/SC14_HomeSlider.feature:11)
+]]></failure>
+    <system-out><![CDATA[D:\FWD-SCHOLARSHIP\AutomationProject\src\main\resources\chromedriver.exe
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 58340
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 08, 2022 3:15:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Jun 08, 2022 3:15:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 102
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Second slider is clickable on home page&quot;, &quot;SC14- User Can to click to home slider and go to related page&quot;](18)" classname="org.example.Runners.TestRunTestNg" time="10.506">
+    <failure message="expected:&lt;...emo.nopcommerce.com/[]&gt; but was:&lt;...emo.nopcommerce.com/[iphone-6]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<...emo.nopcommerce.com/[]> but was:<...emo.nopcommerce.com/[iphone-6]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at org.example.StepsCode.C14_HomeSlider.confirmShowTwo(C14_HomeSlider.java:35)
+	at ✽.Relative product for second slider is displayed(file:///D:/FWD-SCHOLARSHIP/AutomationProject/src/main/resources/Features/SC14_HomeSlider.feature:21)
+]]></failure>
+    <system-out><![CDATA[D:\FWD-SCHOLARSHIP\AutomationProject\src\main\resources\chromedriver.exe
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 51290
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 08, 2022 3:16:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Jun 08, 2022 3:16:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 102
 ]]></system-err>
   </testcase>

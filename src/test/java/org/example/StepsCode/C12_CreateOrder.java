@@ -1,5 +1,6 @@
 package org.example.StepsCode;
 
+import org.example.Pages.HomePage;
 import org.example.Pages.ShoppingCheckoutPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -12,6 +13,7 @@ public class C12_CreateOrder {
     @And("User fill her data for make the order")
     public void fillData() throws InterruptedException
     {
+        HomePage.changeCurrency();
         Thread.sleep(2000);
         // make an order
         Hooks.driver.navigate().to("https://demo.nopcommerce.com/cart");

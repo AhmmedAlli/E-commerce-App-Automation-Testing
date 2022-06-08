@@ -13,6 +13,9 @@ public class C011_AddToCompareList {
     @When("User try to compare multiple products")
     public void compareProducts() throws InterruptedException
     {
+        HomePage.changeCurrency();
+        Thread.sleep(1000);
+
         Hooks.driver.findElement(HomePage.selectCategory2()).click();
         Thread.sleep(1000);
 

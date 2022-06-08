@@ -16,6 +16,7 @@ public class C10_AddToWishList {
     @Given("User logged in successfully")
     public void login() throws InterruptedException {
         LoginPage.LoginSteps(Hooks.Email,Hooks.Password);
+        HomePage.changeCurrency();
     }
 
     @When("User select different products to wishlist")

@@ -1,5 +1,6 @@
 package org.example.StepsCode;
 
+import org.example.Pages.HomePage;
 import org.example.Pages.LoginPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -15,6 +16,7 @@ public class C07_FilterColor {
     @Given("User logged in into website")
     public void login() throws InterruptedException {
         LoginPage.LoginSteps(Hooks.Email,Hooks.Password);
+        HomePage.changeCurrency();
     }
 
     @And("User should to select an item to filter")

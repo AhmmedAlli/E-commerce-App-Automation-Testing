@@ -38,7 +38,7 @@ public class HomePage
 
     }
 
-    public static   String expectedResult()
+    public static String expectedResult()
     {
         return "https://demo.nopcommerce.com/";
     }
@@ -46,5 +46,15 @@ public class HomePage
     public static WebElement logoutBtn()
     {
         return Hooks.driver.findElement(By.cssSelector("li > a[class=\"ico-logout\"]"));
+    }
+
+    public static void changeCurrency()
+    {
+        Hooks.driver.findElement(By.name("customerCurrency")).sendKeys("Euro");
+    }
+
+    public static WebElement sliders(String num)
+    {
+        return Hooks.driver.findElement(By.xpath("(//a[@href=\"http://demo.nopcommerce.com/\"])["+num+"]"));
     }
 }
