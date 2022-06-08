@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="189.546">
+<testcase classname="SC1- Registration | guest user could register with valid data successfully" name="User will enter valid to inputs" time="14.487">
+<system-out><![CDATA[Given User should have an email to register.................................passed
+And User navigate to register page..........................................passed
+When User enter valid data..................................................passed
+Then User could be register successfully....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="SC2- User could log in with valid email and password" name="User log in with valid email and password" time="8.032">
+<system-out><![CDATA[Given User navigate to login page...........................................passed
+When User enter valid email.................................................passed
+And User enter valid password...............................................passed
+And User Click to login button..............................................passed
+Then User could be logged in successfully...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="SC3- User could reset his/her password successfully" name="User want to reset his/her password" time="7.663">
+<system-out><![CDATA[Given User navigate to login page directly..................................passed
+When User enter the reset password button...................................passed
+And User enter his email to send the key to reset the password..............passed
+And User clicked to reset button............................................passed
+Then The website send to email hsa been register............................passed
+]]></system-out>
+</testcase>
+<testcase classname="SC4- Logged User could search for any product" name="User search about product" time="9.507">
+<system-out><![CDATA[Given User should to be logged in successfully..............................passed
+When User Write the name of product an Ex:"Camera"..........................passed
+And User clicked to enter button in keyboard................................passed
+Then The wabsite should appear the results related to the product name......passed
+]]></system-out>
+</testcase>
+<testcase classname="SC5- Logged User could switch between currencies US-Euro" name="Logged user switch currency to euro" time="9.824">
+<system-out><![CDATA[Given User should to be logged in successfully..............................passed
+When User choose "Euro" as a main currency from static dropdown.............passed
+Then The currency in the website should to be changed.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="SC6- Logged user could select different Categories" name="Logged user select Category" time="12.019">
+<system-out><![CDATA[Given User should to be logged in successfully..............................passed
+When User select any category...............................................passed
+Then The website should to appear the products that related to the category selected.passed
+]]></system-out>
+</testcase>
+<testcase classname="SC7- Logged user could filter with color" name="User filter selected item with color" time="11.965">
+<system-out><![CDATA[Given User should to be logged in successfully..............................passed
+And User should to select an item to filter.................................passed
+When User filter items by color option......................................passed
+Then User appear for him the filter items with color he choosed.............passed
+]]></system-out>
+</testcase>
+<testcase classname="SC8- Logged user could select different tags" name="User try to select different tags" time="14.124">
+<system-out><![CDATA[Given User should to be logged in successfully..............................passed
+And User select any category................................................passed
+When User select different tags.............................................passed
+Then User appear for him results of related items for this tag..............passed
+]]></system-out>
+</testcase>
+<testcase classname="SC9- Logged user could add different products to Shopping cart" name="User try to add product to shopping cart" time="19.031">
+<system-out><![CDATA[Given User should to be logged in successfully..............................passed
+And User go to home page to shop any product................................passed
+When User add products to cart..............................................passed
+Then User should to find the products in shopping cart......................passed
+]]></system-out>
+</testcase>
+<testcase classname="SC10- Logged user could add different products to Wishlist" name="User could be able to add products to wishlist" time="21.564">
+<system-out><![CDATA[Given User logged in successfully...........................................passed
+And User go to home page to shop any product................................passed
+When User select different products to wishlist.............................passed
+Then User show green message for successful add products to wishlist........passed
+And User open wishlist page and find the items has been selected............passed
+]]></system-out>
+</testcase>
+<testcase classname="SC11- Logged user could add different products to compare list" name="user try to compare multiple products" time="21.299">
+<system-out><![CDATA[Given User logged in successfully...........................................passed
+And User go to home page to shop any product................................passed
+When User try to compare multiple products..................................passed
+Then Successful message for add products to compare list....................passed
+And Products should to be find into compare list page.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="SC12- Create successful Order" name="User make an order" time="39.809">
+<system-out><![CDATA[Given User logged in successfully...........................................passed
+When User add products to cart..............................................passed
+And User fill her data for make the order...................................passed
+Then Order should created successfully......................................passed
+]]></system-out>
+</testcase>
+</testsuite>
