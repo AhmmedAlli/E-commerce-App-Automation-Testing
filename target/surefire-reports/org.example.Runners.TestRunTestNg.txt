@@ -1,22 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: org.example.Runners.TestRunTestNg
 -------------------------------------------------------------------------------
-Tests run: 18, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 274.781 s <<< FAILURE! - in org.example.Runners.TestRunTestNg
-org.example.Runners.TestRunTestNg.runScenario["User opens rss link", "SC-13 User could have to follow the pages of website"](15)  Time elapsed: 8.351 s  <<< FAILURE!
+Tests run: 20, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 296.415 s <<< FAILURE! - in org.example.Runners.TestRunTestNg
+org.example.Runners.TestRunTestNg.runScenario["User opens rss link", "SC-13 User could have to follow the pages of website"](16)  Time elapsed: 9.742 s  <<< FAILURE!
 java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
 	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
 	at java.util.ArrayList.get(ArrayList.java:429)
-	at org.example.StepsCode.C13_FollowUs.openRss(C13_FollowUs.java:81)
+	at org.example.StepsCode.C13_FollowUs.openRss(C13_FollowUs.java:83)
 	at ✽.User opens rss link(file:///D:/FWD-SCHOLARSHIP/AutomationProject/src/main/resources/Features/SC13_FollowUs.feature:27)
 
-org.example.Runners.TestRunTestNg.runScenario["First slider is clickable on home page", "SC14- User Can to click to home slider and go to related page"](17)  Time elapsed: 8.583 s  <<< FAILURE!
+org.example.Runners.TestRunTestNg.runScenario["First slider is clickable on home page", "SC14- User Can to click to home slider and go to related page"](18)  Time elapsed: 10.179 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<...emo.nopcommerce.com/[]> but was:<...emo.nopcommerce.com/[nokia-lumia-1020]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
 	at org.example.StepsCode.C14_HomeSlider.confirmShowOne(C14_HomeSlider.java:21)
 	at ✽.Relative product for first slider is displayed(file:///D:/FWD-SCHOLARSHIP/AutomationProject/src/main/resources/Features/SC14_HomeSlider.feature:11)
 
-org.example.Runners.TestRunTestNg.runScenario["Second slider is clickable on home page", "SC14- User Can to click to home slider and go to related page"](18)  Time elapsed: 10.506 s  <<< FAILURE!
+org.example.Runners.TestRunTestNg.runScenario["Second slider is clickable on home page", "SC14- User Can to click to home slider and go to related page"](19)  Time elapsed: 12.016 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<...emo.nopcommerce.com/[]> but was:<...emo.nopcommerce.com/[iphone-6]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)

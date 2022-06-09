@@ -11,6 +11,7 @@ org\example\StepsCode\C14_HomeSlider.class
 org\example\StepsCode\C05_SwitchCurrencies.class
 org\example\Pages\HomePage.class
 org\example\StepsCode\C12_CreateOrder.class
+org\example\StepsCode\C15_ProductHomePage.class
 org\example\StepsCode\C03_Reset_Password.class
 org\example\StepsCode\C13_FollowUs.class
 org\example\StepsCode\C07_FilterColor.class

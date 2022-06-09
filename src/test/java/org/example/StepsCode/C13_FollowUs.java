@@ -20,6 +20,8 @@ public class C13_FollowUs {
     public void goToHomePage()
     {
         HomePage.goToHomePage();
+        HomePage.changeCurrency();
+
     }
 
     ArrayList<String> Tabs ;
