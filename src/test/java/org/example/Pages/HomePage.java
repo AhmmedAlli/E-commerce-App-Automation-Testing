@@ -4,6 +4,8 @@ import org.example.StepsCode.Hooks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 
 public class HomePage
 {
@@ -57,4 +59,36 @@ public class HomePage
     {
         return Hooks.driver.findElement(By.xpath("(//a[@href=\"http://demo.nopcommerce.com/\"])["+num+"]"));
     }
+
+    public static void confirmPhCurrency()
+    {
+        String confirmSignP1 = accessHProduct("1");
+        Assert.assertTrue(confirmSignP1.contains("€"),"Confirm Sign");
+
+        String confirmSignP2 = accessHProduct("2");
+        Assert.assertTrue(confirmSignP2.contains("€"),"Confirm Sign");
+
+        String confirmSignP3 = accessHProduct("3");
+        Assert.assertTrue(confirmSignP3.contains("€"),"Confirm Sign");
+
+        String confirmSignP4 = accessHProduct("4");
+        Assert.assertTrue(confirmSignP4.contains("€"),"Confirm Sign");
+    }
+
+    public static void getPriceText() throws InterruptedException
+    {
+        Actions action = new Actions(Hooks.driver);
+        WebElement products = Hooks.driver.findElement(By.cssSelector("[class=\"product-grid home-page-product-grid\"]"));
+        action.moveToElement(products).perform();
+        Thread.sleep(1000);
+
+    }
+
+
+    public static String accessHProduct(String num)
+    {
+        return Hooks.driver.findElement(By.xpath("(//span[@class=\"price actual-price\"])["+num+"]")).getText();
+    }
+
+
 }

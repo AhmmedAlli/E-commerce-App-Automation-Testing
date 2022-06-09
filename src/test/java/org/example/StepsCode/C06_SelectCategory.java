@@ -1,5 +1,6 @@
 package org.example.StepsCode;
 
+import org.example.Pages.CategoryPage;
 import org.example.Pages.HomePage;
 import org.example.Pages.LoginPage;
 import io.cucumber.java.en.Given;
@@ -46,6 +47,10 @@ public class C06_SelectCategory {
     @Then("The website should to appear the products that related to the category selected")
     public void confirmSelectCategory()
     {
+        //Actual Sign
+
+        Assert.assertTrue("Select Category",CategoryPage.confirmSignProducts().contains("€"));
+
         String actualResult = Hooks.driver.findElement(By.cssSelector("div[class=\"page-title\"]")).getText().toLowerCase();
         String expectedResult = subCategoryName;
 

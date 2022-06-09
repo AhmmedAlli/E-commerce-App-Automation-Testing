@@ -2,11 +2,11 @@ package org.example.StepsCode;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.example.Pages.HomePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
-import org.testng.asserts.SoftAssert;
 
 public class C15_ProductHomePage {
 
@@ -20,12 +20,15 @@ public class C15_ProductHomePage {
     }
 
     @Then("User find the products in home page")
-    public void confirmProducts()
-    {
+    public void confirmProducts() throws InterruptedException {
+
+        HomePage.confirmPhCurrency();
         Assert.assertTrue(Hooks.driver.findElement(By.cssSelector("div[data-productid=\"1\"]")).isDisplayed());
         Assert.assertTrue(Hooks.driver.findElement(By.cssSelector("div[data-productid=\"4\"]")).isDisplayed());
         Assert.assertTrue(Hooks.driver.findElement(By.cssSelector("div[data-productid=\"18\"]")).isDisplayed());
         Assert.assertTrue(Hooks.driver.findElement(By.cssSelector("div[data-productid=\"43\"]")).isDisplayed());
+
+
     }
 
 }

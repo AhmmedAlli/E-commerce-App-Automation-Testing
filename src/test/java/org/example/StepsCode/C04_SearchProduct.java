@@ -2,11 +2,13 @@ package org.example.StepsCode;
 
 
 import io.cucumber.java.en.*;
+import org.example.Pages.CategoryPage;
 import org.example.Pages.HomePage;
 import org.example.Pages.LoginPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 public class C04_SearchProduct {
@@ -39,6 +41,8 @@ public class C04_SearchProduct {
     public void showProductResult() throws InterruptedException {
 
 
+        //Assert Actual Currency
+        Assert.assertTrue(CategoryPage.confirmSignProducts().contains("€"),"Search");
 
         SoftAssert soft = new SoftAssert();
         // ASSERT NUMBER #1

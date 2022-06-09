@@ -1,5 +1,6 @@
 package org.example.StepsCode;
 
+import org.example.Pages.HomePage;
 import org.example.Pages.LoginPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -22,12 +23,21 @@ public class C05_SwitchCurrencies {
     }
 
     @Then("The currency in the website should to be changed")
-    public void confirmationChange()
-    {
+    public void confirmationChange() throws InterruptedException {
+
+        // confirm sign
+        HomePage.getPriceText();
+        HomePage.confirmPhCurrency();
+
+        // confirm title
         String actualResult = Hooks.driver.findElement(By.name("customerCurrency")).getText();
         String expectedResult = "Euro";
+        Assert.assertTrue(actualResult.contains(expectedResult),"Confirm Title");
 
-        Assert.assertTrue(actualResult.contains(expectedResult));
     }
+
+
+
+
 
 }

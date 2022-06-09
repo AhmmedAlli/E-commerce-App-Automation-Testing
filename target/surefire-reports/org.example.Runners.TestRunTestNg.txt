@@ -1,25 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: org.example.Runners.TestRunTestNg
 -------------------------------------------------------------------------------
-Tests run: 20, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 296.415 s <<< FAILURE! - in org.example.Runners.TestRunTestNg
-org.example.Runners.TestRunTestNg.runScenario["User opens rss link", "SC-13 User could have to follow the pages of website"](16)  Time elapsed: 9.742 s  <<< FAILURE!
-java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
-	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
-	at java.util.ArrayList.get(ArrayList.java:429)
-	at org.example.StepsCode.C13_FollowUs.openRss(C13_FollowUs.java:83)
-	at ✽.User opens rss link(file:///D:/FWD-SCHOLARSHIP/AutomationProject/src/main/resources/Features/SC13_FollowUs.feature:27)
+Tests run: 19, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 289.632 s <<< FAILURE! - in org.example.Runners.TestRunTestNg
+org.example.Runners.TestRunTestNg.runScenario["User opens rss link", "SC-13 User could have to follow the pages of website"](16)  Time elapsed: 9.411 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at org.example.StepsCode.C13_FollowUs.confirmOpenRss(C13_FollowUs.java:89)
+	at ✽."https://demo.nopcommerce.com/new-online-store-is-open" rss page is opened(file:///D:/FWD-SCHOLARSHIP/AutomationProject/src/main/resources/Features/SC13_FollowUs.feature:29)
 
-org.example.Runners.TestRunTestNg.runScenario["First slider is clickable on home page", "SC14- User Can to click to home slider and go to related page"](18)  Time elapsed: 10.179 s  <<< FAILURE!
+org.example.Runners.TestRunTestNg.runScenario["First slider is clickable on home page", "SC14- User Can to click to home slider and go to related page"](18)  Time elapsed: 9.626 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<...emo.nopcommerce.com/[]> but was:<...emo.nopcommerce.com/[nokia-lumia-1020]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
 	at org.example.StepsCode.C14_HomeSlider.confirmShowOne(C14_HomeSlider.java:21)
 	at ✽.Relative product for first slider is displayed(file:///D:/FWD-SCHOLARSHIP/AutomationProject/src/main/resources/Features/SC14_HomeSlider.feature:11)
-
-org.example.Runners.TestRunTestNg.runScenario["Second slider is clickable on home page", "SC14- User Can to click to home slider and go to related page"](19)  Time elapsed: 12.016 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<...emo.nopcommerce.com/[]> but was:<...emo.nopcommerce.com/[iphone-6]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at org.example.StepsCode.C14_HomeSlider.confirmShowTwo(C14_HomeSlider.java:35)
-	at ✽.Relative product for second slider is displayed(file:///D:/FWD-SCHOLARSHIP/AutomationProject/src/main/resources/Features/SC14_HomeSlider.feature:21)
 

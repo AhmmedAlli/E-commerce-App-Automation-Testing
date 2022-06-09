@@ -77,16 +77,15 @@ public class C13_FollowUs {
     // Scenario #3 User opens RSS link
     @When("User opens rss link")
     public void openRss() throws InterruptedException {
+
         Thread.sleep(2000);
         Hooks.driver.findElement(By.cssSelector("li[class=\"rss\"]")).click();
-        Tabs = new ArrayList<>(Hooks.driver.getWindowHandles());
-        Hooks.driver.switchTo().window(Tabs.get(1));
+
     }
 
     @Then("^\"(.*)\" rss page is opened$")
     public void confirmOpenRss(String expectedResult) throws InterruptedException {
 
-        Thread.sleep(1000);
         Assert.assertEquals(Hooks.driver.getCurrentUrl(),expectedResult);
 
         Thread.sleep(1000);

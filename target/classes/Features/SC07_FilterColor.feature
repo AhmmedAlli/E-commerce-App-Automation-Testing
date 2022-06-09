@@ -3,7 +3,7 @@ Feature: SC7- Logged user could filter with color
 
   Scenario: User filter selected item with color
 
-    Given User go to home page
+    Given User should to be logged in successfully
     And User should to select an item to filter
 
     When User filter items by color option

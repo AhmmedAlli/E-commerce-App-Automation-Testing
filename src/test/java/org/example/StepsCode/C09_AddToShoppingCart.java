@@ -30,16 +30,17 @@ public class C09_AddToShoppingCart {
         Hooks.driver.findElement(HomePage.selectCategory2()).click();
         Hooks.driver.findElement(CategoryPage.categoryBtn2()).click();
 
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
-        Hooks.driver.findElement(By.id("add-to-cart-button-35")).click();
-
-        Thread.sleep(3000);
     }
 
     @Then("User should to find the products in shopping cart")
     public void checkAddProducts()
     {
+        // Assert Sign
+        String expectedResult = Hooks.driver.findElement(By.xpath(("(//span[@class=\"price actual-price\"])[2]"))).getText();
+        Assert.assertTrue("Shop",expectedResult.contains("€"));
+
         ShoppingCheckoutPage.goToCartPage();
         Assert.assertTrue(Hooks.driver.findElement(By.cssSelector("th[class=\"unit-price\"]")).isDisplayed());
     }

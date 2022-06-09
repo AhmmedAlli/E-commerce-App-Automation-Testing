@@ -1,9 +1,11 @@
 package org.example.StepsCode;
 
+import org.example.Pages.CategoryPage;
 import org.example.Pages.HomePage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.testng.asserts.SoftAssert;
 
@@ -38,6 +40,8 @@ public class C011_AddToCompareList {
     @Then("Successful message for add products to compare list")
     public void confirmComparison() throws InterruptedException
     {
+        Assert.assertTrue("Compare",CategoryPage.confirmSignProducts().contains("€"));
+
         Thread.sleep(1000);
         String actualResult = Hooks.driver.findElement(By.cssSelector("[class=\"content\"]")).getText();
         String expectedResult = "The product has been added to your product comparison";

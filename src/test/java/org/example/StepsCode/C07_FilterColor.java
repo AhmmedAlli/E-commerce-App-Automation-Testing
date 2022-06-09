@@ -1,5 +1,6 @@
 package org.example.StepsCode;
 
+import org.example.Pages.CategoryPage;
 import org.example.Pages.HomePage;
 import org.example.Pages.LoginPage;
 import io.cucumber.java.en.And;
@@ -39,6 +40,9 @@ public class C07_FilterColor {
     @Then("User appear for him the filter items with color he choosed")
     public void confirmFilter()
     {
+        //Assert Sign
+        Assert.assertTrue(CategoryPage.confirmSignProducts().contains("€"),"Filter Color");
+
         boolean enableBtn = Hooks.driver.findElement(By.id("attribute-option-15")).isEnabled();
         Assert.assertTrue(enableBtn,"Assert Button");
     }

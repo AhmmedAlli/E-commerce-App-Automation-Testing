@@ -25,7 +25,7 @@ public class C14_HomeSlider {
     // Second Scenario
     @When("User click to second slider")
     public void clickToSHomeSlider() throws InterruptedException {
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         HomePage.sliders("2").click();
     }
 

@@ -1,5 +1,6 @@
 package org.example.StepsCode;
 
+import org.example.Pages.CategoryPage;
 import org.example.Pages.HomePage;
 import org.example.Pages.LoginPage;
 import io.cucumber.java.en.And;
@@ -31,10 +32,14 @@ public class C10_AddToWishList {
         subCategory.click();
 
         Thread.sleep(1000);
+
         Hooks.driver.findElement(By.cssSelector("[data-productid=\"25\"]> div > div > div > [class=\"button-2 product-box-add-to-cart-button\"]")).click();
         Thread.sleep(1000);
         Hooks.driver.findElement(By.cssSelector("[name=\"product_attribute_9\"] option[value=\"21\"]")).click();
-        Hooks.driver.findElement(By.cssSelector("[id=\"add-to-cart-button-25\"]")).click();
+        Hooks.driver.findElement(By.cssSelector("[id=\"add-to-wishlist-button-25\"]")).click();
+
+        Thread.sleep(1000);
+
         HomePage.goToHomePage();
 
         Hooks.driver.findElement(HomePage.selectCategory1()).click();
@@ -47,13 +52,16 @@ public class C10_AddToWishList {
     @Then("User show green message for successful add products to wishlist")
     public void confirmMessage() throws InterruptedException
     {
-        Thread.sleep(1000);
         // Assert #1
+        Assert.assertTrue("Wish",CategoryPage.confirmSignProducts().contains("€"));
+
+        Thread.sleep(1000);
+        // Assert #2
         String actualResult = Hooks.driver.findElement(By.cssSelector("p[class=\"content\"]")).getText();
         String expectedResult = "The product has been added to your wishlist";
         Assert.assertEquals(actualResult,expectedResult);
 
-        // Assert #2
+        // Assert #3
         String actualColor = Hooks.driver.findElement(By.cssSelector("div[class=\"bar-notification success\"]")).getCssValue("background-color");
         String expectedColor = "rgba(75, 176, 122, 1)";
         System.out.println(actualColor);
@@ -67,6 +75,7 @@ public class C10_AddToWishList {
         Hooks.driver.navigate().to("https://demo.nopcommerce.com/wishlist");
         Thread.sleep(1000);
         Assert.assertTrue(Hooks.driver.findElement(By.cssSelector("th[class=\"unit-price\"]")).isDisplayed());
+
     }
 
 }
