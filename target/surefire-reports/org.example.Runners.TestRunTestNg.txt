@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: org.example.Runners.TestRunTestNg
 -------------------------------------------------------------------------------
-Tests run: 19, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 327.615 s <<< FAILURE! - in org.example.Runners.TestRunTestNg
-org.example.Runners.TestRunTestNg.runScenario["User opens rss link", "SC-13 User could have to follow the pages of website"](16)  Time elapsed: 9.71 s  <<< FAILURE!
+Tests run: 19, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 368.812 s <<< FAILURE! - in org.example.Runners.TestRunTestNg
+org.example.Runners.TestRunTestNg.runScenario["User opens rss link", "SC-13 User could have to follow the pages of website"](16)  Time elapsed: 10.242 s  <<< FAILURE!
 java.lang.AssertionError: expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
@@ -13,7 +13,7 @@ java.lang.AssertionError: expected [https://demo.nopcommerce.com/new-online-stor
 	at org.example.StepsCode.C13_FollowUs.confirmOpenRss(C13_FollowUs.java:89)
 	at ✽."https://demo.nopcommerce.com/new-online-store-is-open" rss page is opened(file:///D:/FWD-SCHOLARSHIP/AutomationProject/src/main/resources/Features/SC13_FollowUs.feature:29)
 
-org.example.Runners.TestRunTestNg.runScenario["First slider is clickable on home page", "SC14- User Can to click to home slider and go to related page"](18)  Time elapsed: 9.69 s  <<< FAILURE!
+org.example.Runners.TestRunTestNg.runScenario["First slider is clickable on home page", "SC14- User Can to click to home slider and go to related page"](18)  Time elapsed: 10.089 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<...emo.nopcommerce.com/[nokia-lumia-1020]> but was:<...emo.nopcommerce.com/[]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
