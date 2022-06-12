@@ -18,21 +18,21 @@ public class C14_HomeSlider {
     @Then("Relative product for first slider is displayed")
     public void confirmShowOne() throws InterruptedException {
         Thread.sleep(1000);
-        Assert.assertEquals(Hooks.driver.getCurrentUrl(),"https://demo.nopcommerce.com/nokia-lumia-1020");
+        Assert.assertEquals("https://demo.nopcommerce.com/nokia-lumia-1020",Hooks.driver.getCurrentUrl());
     }
 
 
     // Second Scenario
     @When("User click to second slider")
     public void clickToSHomeSlider() throws InterruptedException {
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         HomePage.sliders("2").click();
     }
 
     @Then("Relative product for second slider is displayed")
     public void confirmShowTwo() throws InterruptedException {
         Thread.sleep(1000);
-        Assert.assertEquals(Hooks.driver.getCurrentUrl(),"https://demo.nopcommerce.com/iphone-6");
+        Assert.assertEquals("https://demo.nopcommerce.com/iphone-6",Hooks.driver.getCurrentUrl());
     }
 
 }

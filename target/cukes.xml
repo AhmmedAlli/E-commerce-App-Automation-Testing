@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="20" time="288.779">
-<testcase classname="SC1- Registration | guest user could register with valid data successfully" name="User will enter valid to inputs" time="15.283">
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="20" time="326.74">
+<testcase classname="SC1- Registration | guest user could register with valid data successfully" name="User will enter valid to inputs" time="19.304">
 <system-out><![CDATA[Given User should have an email to register.................................passed
 And User navigate to register page..........................................passed
 When User enter valid data..................................................passed
 Then User could be register successfully....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="SC2- User could log in with valid email and password" name="User log in with valid email and password" time="8.134">
+<testcase classname="SC2- User could log in with valid email and password" name="User log in with valid email and password" time="14.524">
 <system-out><![CDATA[Given User navigate to login page...........................................passed
 When User enter valid email.................................................passed
 And User enter valid password...............................................passed
@@ -15,7 +15,7 @@ And User Click to login button..............................................pass
 Then User could be logged in successfully...................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="SC3- User could reset his/her password successfully" name="User want to reset his/her password" time="7.968">
+<testcase classname="SC3- User could reset his/her password successfully" name="User want to reset his/her password" time="8.085">
 <system-out><![CDATA[Given User navigate to login page directly..................................passed
 When User enter the reset password button...................................passed
 And User enter his email to send the key to reset the password..............passed
@@ -23,53 +23,53 @@ And User clicked to reset button............................................pass
 Then The website send to email hsa been register............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="SC4- Logged User could search for any product" name="User search about product" time="12.721">
+<testcase classname="SC4- Logged User could search for any product" name="User search about product" time="14.053">
 <system-out><![CDATA[Given User should to be logged in successfully..............................passed
 When User Write the name of product an Ex:"Camera"..........................passed
 And User clicked to enter button in keyboard................................passed
 Then The website should appear the results related to the product name......passed
 ]]></system-out>
 </testcase>
-<testcase classname="SC4- Logged User could search for any product" name="User search for products with step code" time="12.418">
+<testcase classname="SC4- Logged User could search for any product" name="User search for products with step code" time="12.378">
 <system-out><![CDATA[Given User should to be logged in successfully..............................passed
 When User Write the step code of product an Ex:"AP_MBP_13"..................passed
 And User clicked to enter button in keyboard................................passed
 Then The website should appear the results related to the product name......passed
 ]]></system-out>
 </testcase>
-<testcase classname="SC5- Logged User could switch between currencies US-Euro" name="Logged user switch currency to euro" time="9.5">
+<testcase classname="SC5- Logged User could switch between currencies US-Euro" name="Logged user switch currency to euro" time="10.417">
 <system-out><![CDATA[Given User should to be logged in successfully..............................passed
 When User choose "Euro" as a main currency from static dropdown.............passed
 Then The currency in the website should to be changed.......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="SC6- Logged user could select different Categories" name="Logged user select Category" time="12.652">
+<testcase classname="SC6- Logged user could select different Categories" name="Logged user select Category" time="13.045">
 <system-out><![CDATA[Given User should to be logged in successfully..............................passed
 When User select any category...............................................passed
 Then The website should to appear the products that related to the category selected.passed
 ]]></system-out>
 </testcase>
-<testcase classname="SC7- Logged user could filter with color" name="User filter selected item with color" time="12.925">
+<testcase classname="SC7- Logged user could filter with color" name="User filter selected item with color" time="12.453">
 <system-out><![CDATA[Given User should to be logged in successfully..............................passed
 And User should to select an item to filter.................................passed
 When User filter items by color option......................................passed
 Then User appear for him the filter items with color he choosed.............passed
 ]]></system-out>
 </testcase>
-<testcase classname="SC8- Logged user could select different tags" name="User try to select different tags" time="14.998">
+<testcase classname="SC8- Logged user could select different tags" name="User try to select different tags" time="16.719">
 <system-out><![CDATA[Given User should to be logged in successfully..............................passed
 And User select any category................................................passed
 When User select different tags.............................................passed
 Then User appear for him results of related items for this tag..............passed
 ]]></system-out>
 </testcase>
-<testcase classname="SC9- Logged user could add different products to Shopping cart" name="User try to add product to shopping cart" time="13.12">
+<testcase classname="SC9- Logged user could add different products to Shopping cart" name="User try to add product to shopping cart" time="13.639">
 <system-out><![CDATA[And User go to home page to shop any product................................passed
 When User add products to cart..............................................passed
 Then User should to find the products in shopping cart......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="SC10- Logged user could add different products to Wishlist" name="User could be able to add products to wishlist" time="24.101">
+<testcase classname="SC10- Logged user could add different products to Wishlist" name="User could be able to add products to wishlist" time="24.502">
 <system-out><![CDATA[Given User logged in successfully...........................................passed
 And User go to home page to shop any product................................passed
 When User select different products to wishlist.............................passed
@@ -77,7 +77,7 @@ Then User show green message for successful add products to wishlist........pass
 And User open wishlist page and find the items has been selected............passed
 ]]></system-out>
 </testcase>
-<testcase classname="SC11- Logged user could add different products to compare list" name="user try to compare multiple products" time="23.363">
+<testcase classname="SC11- Logged user could add different products to compare list" name="user try to compare multiple products" time="25.891">
 <system-out><![CDATA[Given User logged in successfully...........................................passed
 And User go to home page to shop any product................................passed
 When User try to compare multiple products..................................passed
@@ -85,26 +85,26 @@ Then Successful message for add products to compare list....................pass
 And Products should to be find into compare list page.......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="SC12- Create successful Order" name="User make an order" time="35.779">
+<testcase classname="SC12- Create successful Order" name="User make an order" time="48.04">
 <system-out><![CDATA[Given User logged in successfully...........................................passed
 When User add products to cart..............................................passed
 And User fill her data for make the order...................................passed
 Then Order should created successfully......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="SC-13 User could have to follow the pages of website" name="User opens facebook link" time="11.725">
+<testcase classname="SC-13 User could have to follow the pages of website" name="User opens facebook link" time="12.204">
 <system-out><![CDATA[Given User go to home page..................................................passed
 When User opens facebook link...............................................passed
 Then "https://www.facebook.com/nopCommerce" facebook page is opened.........passed
 ]]></system-out>
 </testcase>
-<testcase classname="SC-13 User could have to follow the pages of website" name="User opens twitter link" time="12.394">
+<testcase classname="SC-13 User could have to follow the pages of website" name="User opens twitter link" time="17.291">
 <system-out><![CDATA[Given User go to home page..................................................passed
 When User opens twitter link................................................passed
 Then "https://twitter.com/nopCommerce" twitter page is opened...............passed
 ]]></system-out>
 </testcase>
-<testcase classname="SC-13 User could have to follow the pages of website" name="User opens rss link" time="9.403">
+<testcase classname="SC-13 User could have to follow the pages of website" name="User opens rss link" time="9.659">
 <failure message="expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]" type="java.lang.AssertionError"><![CDATA[Given User go to home page..................................................passed
 When User opens rss link....................................................passed
 Then "https://demo.nopcommerce.com/new-online-store-is-open" rss page is opened.failed
@@ -121,27 +121,27 @@ java.lang.AssertionError: expected [https://demo.nopcommerce.com/new-online-stor
 	at ✽."https://demo.nopcommerce.com/new-online-store-is-open" rss page is opened(file:///D:/FWD-SCHOLARSHIP/AutomationProject/src/main/resources/Features/SC13_FollowUs.feature:29)
 ]]></failure>
 </testcase>
-<testcase classname="SC-13 User could have to follow the pages of website" name="User opens youtube link" time="17.375">
+<testcase classname="SC-13 User could have to follow the pages of website" name="User opens youtube link" time="14.408">
 <system-out><![CDATA[Given User go to home page..................................................passed
 When User opens youtube link................................................passed
 Then "https://www.youtube.com/user/nopCommerce" youtube page is opend.......passed
 ]]></system-out>
 </testcase>
-<testcase classname="SC14- User Can to click to home slider and go to related page" name="First slider is clickable on home page" time="9.621">
-<failure message="expected:&lt;...emo.nopcommerce.com/[]&gt; but was:&lt;...emo.nopcommerce.com/[nokia-lumia-1020]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given User go to home page..................................................passed
+<testcase classname="SC14- User Can to click to home slider and go to related page" name="First slider is clickable on home page" time="9.686">
+<failure message="expected:&lt;...emo.nopcommerce.com/[nokia-lumia-1020]&gt; but was:&lt;...emo.nopcommerce.com/[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given User go to home page..................................................passed
 When User click to first slider.............................................passed
 Then Relative product for first slider is displayed.........................failed
 
 StackTrace:
-org.junit.ComparisonFailure: expected:<...emo.nopcommerce.com/[]> but was:<...emo.nopcommerce.com/[nokia-lumia-1020]>
+org.junit.ComparisonFailure: expected:<...emo.nopcommerce.com/[nokia-lumia-1020]> but was:<...emo.nopcommerce.com/[]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
 	at org.example.StepsCode.C14_HomeSlider.confirmShowOne(C14_HomeSlider.java:21)
 	at ✽.Relative product for first slider is displayed(file:///D:/FWD-SCHOLARSHIP/AutomationProject/src/main/resources/Features/SC14_HomeSlider.feature:11)
 ]]></failure>
 </testcase>
-<testcase classname="SC14- User Can to click to home slider and go to related page" name="Second slider is clickable on home page" time="16.931">
-<failure message="element not interactable&#10;  (Session info: chrome=102.0.5005.63)&#10;Build info: version: '4.2.1', revision: 'ac4d0fdd4a'&#10;System info: host: 'AH', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [74babb5bc73fb195bd6d683834397cfd, clickElement {id=95c9409e-4622-4922-9719-cb2fec61bcc3}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VT\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:52322}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52322/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (74babb5bc73fb195bd6d683834397cfd)] -&gt; xpath: (//a[@href=&quot;http://demo.nopcommerce.com/&quot;])[2]]&#10;Session ID: 74babb5bc73fb195bd6d683834397cfd" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[Given User go to home page..................................................passed
+<testcase classname="SC14- User Can to click to home slider and go to related page" name="Second slider is clickable on home page" time="15.936">
+<failure message="element not interactable&#10;  (Session info: chrome=102.0.5005.63)&#10;Build info: version: '4.2.1', revision: 'ac4d0fdd4a'&#10;System info: host: 'AH', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [c07b45befd55f9613d66a0b95a5da6c2, clickElement {id=e3f7d0d4-4b38-4a00-a233-a43dba5e4b9d}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VT\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59215}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59215/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (c07b45befd55f9613d66a0b95a5da6c2)] -&gt; xpath: (//a[@href=&quot;http://demo.nopcommerce.com/&quot;])[2]]&#10;Session ID: c07b45befd55f9613d66a0b95a5da6c2" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[Given User go to home page..................................................passed
 When User click to second slider............................................failed
 Then Relative product for second slider is displayed........................skipped
 
@@ -151,10 +151,10 @@ org.openqa.selenium.ElementNotInteractableException: element not interactable
 Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
 System info: host: 'AH', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [74babb5bc73fb195bd6d683834397cfd, clickElement {id=95c9409e-4622-4922-9719-cb2fec61bcc3}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VT\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:52322}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52322/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (74babb5bc73fb195bd6d683834397cfd)] -> xpath: (//a[@href="http://demo.nopcommerce.com/"])[2]]
-Session ID: 74babb5bc73fb195bd6d683834397cfd
+Command: [c07b45befd55f9613d66a0b95a5da6c2, clickElement {id=e3f7d0d4-4b38-4a00-a233-a43dba5e4b9d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VT\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:59215}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59215/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (c07b45befd55f9613d66a0b95a5da6c2)] -> xpath: (//a[@href="http://demo.nopcommerce.com/"])[2]]
+Session ID: c07b45befd55f9613d66a0b95a5da6c2
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -172,7 +172,7 @@ Session ID: 74babb5bc73fb195bd6d683834397cfd
 	at ✽.User click to second slider(file:///D:/FWD-SCHOLARSHIP/AutomationProject/src/main/resources/Features/SC14_HomeSlider.feature:19)
 ]]></failure>
 </testcase>
-<testcase classname="SC15- User should to find products are displayed in home page" name="User scroll down into home page" time="8.108">
+<testcase classname="SC15- User should to find products are displayed in home page" name="User scroll down into home page" time="14.248">
 <system-out><![CDATA[Given User go to home page..................................................passed
 When User scroll down into home page........................................passed
 Then User find the products in home page....................................passed
