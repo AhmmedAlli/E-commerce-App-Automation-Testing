@@ -9,7 +9,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.testng.asserts.SoftAssert;
 
-public class C011_AddToCompareList {
+public class C11_AddToCompareList {
 
 
     @When("User try to compare multiple products")
