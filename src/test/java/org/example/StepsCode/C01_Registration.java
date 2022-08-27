@@ -19,7 +19,7 @@ public class C01_Registration {
                 Thread.sleep(1000);
         }
 
-        @And("User navigate to register page")
+        @And("User navigate to registration page")
 
         public void navigateToRegisterPage() {
           Hooks.driver.navigate().to("https://demo.nopcommerce.com/register?returnUrl=%2F");
