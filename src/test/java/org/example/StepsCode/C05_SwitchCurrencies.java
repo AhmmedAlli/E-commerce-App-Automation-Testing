@@ -27,8 +27,11 @@ public class C05_SwitchCurrencies {
 
         // confirm sign
         HomePage.getPriceText();
-        HomePage.confirmPhCurrency();
-
+        for (int i = 1 ; i<=4 ; i++)
+        {
+            String number = Integer.toString(i);
+            Assert.assertTrue(HomePage.accessHProduct(number).contains("€"),"Sign Confirmed");
+        }
         // confirm title
         String actualResult = Hooks.driver.findElement(By.name("customerCurrency")).getText();
         String expectedResult = "Euro";

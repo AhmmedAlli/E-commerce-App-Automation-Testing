@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="20" time="399.719">
+<testcase classname="SC1- Registration | guest user could register with valid data successfully" name="User will enter valid to inputs" time="41.716">
+<system-out><![CDATA[Given User should have an email to register.................................passed
+And User navigate to registration page......................................passed
+When User enter valid data..................................................passed
+Then User could be register successfully....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="SC2- User could log in with valid email and password" name="User log in with valid email and password" time="11.754">
+<system-out><![CDATA[Given User navigate to login page...........................................passed
+When User enter valid email.................................................passed
+And User enter valid password...............................................passed
+And User Click to login button..............................................passed
+Then User could be logged in successfully...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="SC3- User could reset his/her password successfully" name="User want to reset his/her password" time="10.212">
+<system-out><![CDATA[Given User navigate to login page directly..................................passed
+When User enter the reset password button...................................passed
+And User enter his email to send the key to reset the password..............passed
+And User clicked to reset button............................................passed
+Then The website send to email hsa been register............................passed
+]]></system-out>
+</testcase>
+<testcase classname="SC4- Logged User could search for any product" name="User search about product" time="15.135">
+<system-out><![CDATA[Given User should to be logged in successfully..............................passed
+When User Write the name of product an Ex:"Camera"..........................passed
+And User clicked to enter button in keyboard................................passed
+Then The website should appear the results related to the product name......passed
+]]></system-out>
+</testcase>
+<testcase classname="SC4- Logged User could search for any product" name="User search for products with step code" time="15.7">
+<system-out><![CDATA[Given User should to be logged in successfully..............................passed
+When User Write the step code of product an Ex:"AP_MBP_13"..................passed
+And User clicked to enter button in keyboard................................passed
+Then The website should appear the results related to the product name......passed
+]]></system-out>
+</testcase>
+<testcase classname="SC5- Logged User could switch between currencies US-Euro" name="Logged user switch currency to euro" time="12.721">
+<system-out><![CDATA[Given User should to be logged in successfully..............................passed
+When User choose "Euro" as a main currency from static dropdown.............passed
+Then The currency in the website should to be changed.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="SC6- Logged user could select different Categories" name="Logged user select Category" time="14.32">
+<system-out><![CDATA[Given User should to be logged in successfully..............................passed
+When User select any category...............................................passed
+Then The website should to appear the products that related to the category selected.passed
+]]></system-out>
+</testcase>
+<testcase classname="SC7- Logged user could filter with color" name="User filter selected item with color" time="15.28">
+<system-out><![CDATA[Given User should to be logged in successfully..............................passed
+And User should to select an item to filter.................................passed
+When User filter items by color option......................................passed
+Then User appear for him the filter items with color he choosed.............passed
+]]></system-out>
+</testcase>
+<testcase classname="SC8- Logged user could select different tags" name="User try to select different tags" time="16.399">
+<system-out><![CDATA[Given User should to be logged in successfully..............................passed
+And User select any category................................................passed
+When User select different tags.............................................passed
+Then User appear for him results of related items for this tag..............passed
+]]></system-out>
+</testcase>
+<testcase classname="SC9- Logged user could add different products to Shopping cart" name="User try to add product to shopping cart" time="20.564">
+<system-out><![CDATA[Given User should to be logged in successfully..............................passed
+And User go to home page to shop any product................................passed
+When User add products to cart..............................................passed
+Then User should to find the products in shopping cart......................passed
+]]></system-out>
+</testcase>
+<testcase classname="SC10- Logged user could add different products to Wishlist" name="User could be able to add products to wishlist" time="28.557">
+<system-out><![CDATA[Given User logged in successfully...........................................passed
+And User go to home page to shop any product................................passed
+When User select different products to wishlist.............................passed
+Then User show green message for successful add products to wishlist........passed
+And User open wishlist page and find the items has been selected............passed
+]]></system-out>
+</testcase>
+<testcase classname="SC11- Logged user could add different products to compare list" name="user try to compare multiple products" time="26.276">
+<system-out><![CDATA[Given User logged in successfully...........................................passed
+And User go to home page to shop any product................................passed
+When User try to compare multiple products..................................passed
+Then Successful message for add products to compare list....................passed
+And Products should to be find into compare list page.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="SC12- Create successful Order" name="User make an order" time="42.507">
+<system-out><![CDATA[Given User logged in successfully...........................................passed
+When User add products to cart..............................................passed
+And User fill her data for make the order...................................passed
+Then Order should created successfully......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="SC-13 User could have to follow the pages of website" name="User opens facebook link" time="14.896">
+<system-out><![CDATA[Given User go to home page..................................................passed
+When User opens facebook link...............................................passed
+Then "https://www.facebook.com/nopCommerce" facebook page is opened.........passed
+]]></system-out>
+</testcase>
+<testcase classname="SC-13 User could have to follow the pages of website" name="User opens twitter link" time="15.158">
+<system-out><![CDATA[Given User go to home page..................................................passed
+When User opens twitter link................................................passed
+Then "https://twitter.com/nopCommerce" twitter page is opened...............passed
+]]></system-out>
+</testcase>
+<testcase classname="SC-13 User could have to follow the pages of website" name="User opens rss link" time="11.614">
+<failure message="expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]" type="java.lang.AssertionError"><![CDATA[Given User go to home page..................................................passed
+When User opens rss link....................................................passed
+Then "https://demo.nopcommerce.com/new-online-store-is-open" rss page is opened.failed
+
+StackTrace:
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at org.example.StepsCode.C13_FollowUs.confirmOpenRss(C13_FollowUs.java:89)
+	at ✽."https://demo.nopcommerce.com/new-online-store-is-open" rss page is opened(file:///D:/Courses/Testing%20Courses/Fwd_Front_End/AutomationProject/src/main/resources/Features/SC13_FollowUs.feature:29)
+]]></failure>
+</testcase>
+<testcase classname="SC-13 User could have to follow the pages of website" name="User opens youtube link" time="38.94">
+<system-out><![CDATA[Given User go to home page..................................................passed
+When User opens youtube link................................................passed
+Then "https://www.youtube.com/user/nopCommerce" youtube page is opend.......passed
+]]></system-out>
+</testcase>
+<testcase classname="SC14- User Can to click to home slider and go to related page" name="First slider is clickable on home page" time="17.744">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//a[@href=&quot;http://demo.nopcommerce.com/&quot;])[1]&quot;}&#10;  (Session info: MicrosoftEdge=111.0.1661.54)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.2', revision: '826dbfc730'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [6cd2c4a54bf7dbe1e3d0095a77b0bf99, findElement {using=xpath, value=(//a[@href=&quot;http://demo.nopcommerce.com/&quot;])[1]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.54, ms:edgeOptions: {debuggerAddress: localhost:56993}, msedge: {msedgedriverVersion: 111.0.1661.54 (9e410ec23a36..., userDataDir: C:\Users\VT\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56993/devtoo..., se:cdpVersion: 111.0.1661.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6cd2c4a54bf7dbe1e3d0095a77b0bf99" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User go to home page..................................................passed
+When User click to first slider.............................................failed
+Then Relative product for first slider is displayed.........................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[@href="http://demo.nopcommerce.com/"])[1]"}
+  (Session info: MicrosoftEdge=111.0.1661.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [6cd2c4a54bf7dbe1e3d0095a77b0bf99, findElement {using=xpath, value=(//a[@href="http://demo.nopcommerce.com/"])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.54, ms:edgeOptions: {debuggerAddress: localhost:56993}, msedge: {msedgedriverVersion: 111.0.1661.54 (9e410ec23a36..., userDataDir: C:\Users\VT\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56993/devtoo..., se:cdpVersion: 111.0.1661.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6cd2c4a54bf7dbe1e3d0095a77b0bf99
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.example.Pages.HomePage.sliders(HomePage.java:60)
+	at org.example.StepsCode.C14_HomeSlider.clickToFHomeSlider(C14_HomeSlider.java:14)
+	at ✽.User click to first slider(file:///D:/Courses/Testing%20Courses/Fwd_Front_End/AutomationProject/src/main/resources/Features/SC14_HomeSlider.feature:9)
+]]></failure>
+</testcase>
+<testcase classname="SC14- User Can to click to home slider and go to related page" name="Second slider is clickable on home page" time="18.352">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//a[@href=&quot;http://demo.nopcommerce.com/&quot;])[2]&quot;}&#10;  (Session info: MicrosoftEdge=111.0.1661.54)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.2', revision: '826dbfc730'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [73a8b2c381f700c814ab3a91a2da20e6, findElement {using=xpath, value=(//a[@href=&quot;http://demo.nopcommerce.com/&quot;])[2]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.54, ms:edgeOptions: {debuggerAddress: localhost:57034}, msedge: {msedgedriverVersion: 111.0.1661.54 (9e410ec23a36..., userDataDir: C:\Users\VT\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57034/devtoo..., se:cdpVersion: 111.0.1661.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 73a8b2c381f700c814ab3a91a2da20e6" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User go to home page..................................................passed
+When User click to second slider............................................failed
+Then Relative product for second slider is displayed........................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//a[@href="http://demo.nopcommerce.com/"])[2]"}
+  (Session info: MicrosoftEdge=111.0.1661.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [73a8b2c381f700c814ab3a91a2da20e6, findElement {using=xpath, value=(//a[@href="http://demo.nopcommerce.com/"])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.54, ms:edgeOptions: {debuggerAddress: localhost:57034}, msedge: {msedgedriverVersion: 111.0.1661.54 (9e410ec23a36..., userDataDir: C:\Users\VT\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57034/devtoo..., se:cdpVersion: 111.0.1661.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73a8b2c381f700c814ab3a91a2da20e6
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.example.Pages.HomePage.sliders(HomePage.java:60)
+	at org.example.StepsCode.C14_HomeSlider.clickToSHomeSlider(C14_HomeSlider.java:28)
+	at ✽.User click to second slider(file:///D:/Courses/Testing%20Courses/Fwd_Front_End/AutomationProject/src/main/resources/Features/SC14_HomeSlider.feature:19)
+]]></failure>
+</testcase>
+<testcase classname="SC15- User should to find products are displayed in home page" name="User scroll down into home page" time="11.139">
+<system-out><![CDATA[Given User go to home page..................................................passed
+When User scroll down into home page........................................passed
+Then User find the products in home page....................................passed
+]]></system-out>
+</testcase>
+</testsuite>

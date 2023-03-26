@@ -4,6 +4,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -19,10 +20,7 @@ public class Hooks {
 
     @Before
     public void openBrowser()  {
-        String path = System.getProperty("user.dir") + "\\src\\main\\resources\\chromedriver.exe";
-        System.out.println(path);
-        System.setProperty("webdriver.chrome.driver",path);
-        driver = new ChromeDriver();
+        driver = new EdgeDriver();
         driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
         driver.manage().window().maximize();
     }

@@ -14,7 +14,6 @@ public class C14_HomeSlider {
         HomePage.sliders("1").click();
     }
 
-
     @Then("Relative product for first slider is displayed")
     public void confirmShowOne() throws InterruptedException {
         Thread.sleep(1000);

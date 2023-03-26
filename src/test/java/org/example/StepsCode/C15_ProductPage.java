@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
-public class C15_ProductHomePage {
+public class C15_ProductPage {
 
 
     @When("User scroll down into home page")
@@ -22,7 +22,11 @@ public class C15_ProductHomePage {
     @Then("User find the products in home page")
     public void confirmProducts() throws InterruptedException {
 
-        HomePage.confirmPhCurrency();
+        for (int i = 1 ; i<=4 ; i++)
+        {
+            String number = Integer.toString(i);
+            Assert.assertTrue(HomePage.accessHProduct(number).contains("€"),"Sign Confirmed");
+        }
         Assert.assertTrue(Hooks.driver.findElement(By.cssSelector("div[data-productid=\"1\"]")).isDisplayed());
         Assert.assertTrue(Hooks.driver.findElement(By.cssSelector("div[data-productid=\"4\"]")).isDisplayed());
         Assert.assertTrue(Hooks.driver.findElement(By.cssSelector("div[data-productid=\"18\"]")).isDisplayed());

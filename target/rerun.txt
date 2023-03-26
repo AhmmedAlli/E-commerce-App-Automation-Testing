@@ -1,0 +1,2 @@
+file:src/main/resources/Features/SC13_FollowUs.feature:23
+file:src/main/resources/Features/SC14_HomeSlider.feature:5:15
